@@ -1,0 +1,20 @@
+NOTE - We have not given any harcoaded username and password in yml file it should be picked from vaults only.
+
+reference link - 1) https://www.youtube.com/watch?v=9cd792KQ2f4
+                 2) https://www.youtube.com/watch?v=n0kmSftlesE
+
+vault local url path - http://127.0.0.1:8200
+
+Please find below few details about hashicorp and few commands related to that
+ 1. Download vault from here ->
+  https://developer.hashicorp.com/vault/install
+ 2. Check version of vault
+  a. Open cmd from downloaded vault.exe folder path and run command -> vault -version
+ 3. For starting vault server use below command
+  a. vault server -dev
+ 4. Get value from vault
+  a. vault kv get -mount=secret vaultdemo
+ 5. Put value into vault
+  a. vault kv put -mount=secret vaultdemo demo.username=demouser
+
+** POSTMAN COLLECTION ADDED HERE --- VaultBasedUseInDB.postman_collection.json
