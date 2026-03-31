@@ -1,7 +1,8 @@
-NOTE - We have not given any harcoaded username and password in yml file it should be picked from vaults only.
-
 reference link - 1) https://www.youtube.com/watch?v=9cd792KQ2f4
                  2) https://www.youtube.com/watch?v=n0kmSftlesE
+
+NOTE - We have not given any hardcoded username and password in yml file it should be picked from vaults only.
+In order to run this app vault server should be up and running step -> 3.a.
 
 vault local url path - http://127.0.0.1:8200
 

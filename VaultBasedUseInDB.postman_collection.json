@@ -1,0 +1,121 @@
+{
+  "info": {
+    "_postman_id": "7cee8794-b249-4c54-b0de-f69e3b3fb748",
+    "name": "VaultBasedUseInDB",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "8770459"
+  },
+  "item": [
+    {
+      "name": "addUser",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"sanket\",\r\n    \"DOB\": \"31-08-1996\",\r\n    \"email\": \"sanket@123\",\r\n    \"mobileNumber\": 8605151634\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vault/api/user/addUser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vault",
+            "api",
+            "user",
+            "addUser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getAllUsers",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vault/api/user/getAllUsers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vault",
+            "api",
+            "user",
+            "getAllUsers"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getUserById",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/vault/api/user/getUserById?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "vault",
+            "api",
+            "user",
+            "getUserById"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
